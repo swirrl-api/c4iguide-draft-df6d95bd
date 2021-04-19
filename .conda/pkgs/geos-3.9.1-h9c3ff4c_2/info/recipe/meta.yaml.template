@@ -1,0 +1,51 @@
+{% set version = "3.9.1" %}
+
+package:
+  name: geos
+  version: {{ version }}
+
+source:
+  url: http://download.osgeo.org/geos/geos-{{ version }}.tar.bz2
+  sha256: 7e630507dcac9dc07565d249a26f06a15c9f5b0c52dd29129a0e3d381d7e382a
+
+build:
+  number: 2
+  skip: true  # [win and vc<14]
+  run_exports:
+    # pretty poor backcompat.  SO name changes each release.
+    # https://abi-laboratory.pro/tracker/timeline/geos/
+    - {{ pin_subpackage('geos', max_pin='x.x.x') }}
+
+requirements:
+  build:
+    - cmake  # [win]
+    - ninja  # [win]
+    - automake  # [not win]
+    - libtool  # [not win]
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+
+test:
+  commands:
+    - geos-config --version  # [not win]
+
+about:
+  home: https://trac.osgeo.org/geos/
+  license: LGPL-2.1-only
+  license_file: COPYING
+  summary: Geometry Engine - Open Source
+  description: |
+    GEOS (Geometry Engine - Open Source) is a C++ port of the Java Topology
+    Suite (JTS). As such, it aims to contain the complete functionality of
+    JTS in C++.
+  doc_url: https://trac.osgeo.org/geos/
+  dev_url: https://git.osgeo.org/gitea/geos/geos
+
+extra:
+  recipe-maintainers:
+    - ocefpaf
+    - pelson
+    - gillins
+    - msarahan
+    - mwtoews
+    - xylar

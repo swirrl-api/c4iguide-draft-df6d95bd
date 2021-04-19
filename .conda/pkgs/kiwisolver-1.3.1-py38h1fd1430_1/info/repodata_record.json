@@ -1,0 +1,27 @@
+{
+  "arch": "x86_64",
+  "build": "py38h1fd1430_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=9.3.0",
+    "libstdcxx-ng >=9.3.0",
+    "python >=3.8,<3.9.0a0",
+    "python_abi 3.8.* *_cp38"
+  ],
+  "features": "",
+  "fn": "kiwisolver-1.3.1-py38h1fd1430_1.tar.bz2",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "01488c80daae318ed5c17e7bb12af64e",
+  "name": "kiwisolver",
+  "platform": "linux",
+  "sha256": "e15d79d9bcc224df6d328f86eb07d87260d853164954bb022d0e59faefa093f9",
+  "size": 81555,
+  "subdir": "linux-64",
+  "timestamp": 1610099902199,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/kiwisolver-1.3.1-py38h1fd1430_1.tar.bz2",
+  "version": "1.3.1"
+}

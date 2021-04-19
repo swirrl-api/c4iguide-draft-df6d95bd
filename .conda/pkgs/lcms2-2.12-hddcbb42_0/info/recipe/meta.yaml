@@ -1,0 +1,73 @@
+# This file created by conda-build 3.21.4
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Sat Feb  6 20:44:36 2021
+# ------------------------------------------------
+
+package:
+  name: lcms2
+  version: '2.12'
+source:
+  patches: null
+  sha256: e501f1482fc424550ef3abbf86bf1c66090e1661249e89552d39ed5bf935df66
+  url: https://github.com/mm2/Little-CMS/archive/2.12.tar.gz
+build:
+  number: '0'
+  run_exports:
+    - lcms2 >=2.12,<3.0a0
+  string: hddcbb42_0
+requirements:
+  build:
+    - _libgcc_mutex 0.1 conda_forge
+    - _openmp_mutex 4.5 1_gnu
+    - binutils_impl_linux-64 2.35.1 h193b22a_2
+    - binutils_linux-64 2.35 hc3fd857_29
+    - gcc_impl_linux-64 9.3.0 h70c0ae5_18
+    - gcc_linux-64 9.3.0 h7247604_29
+    - kernel-headers_linux-64 2.6.32 h77966d4_13
+    - ld_impl_linux-64 2.35.1 hea4e1c9_2
+    - libgcc-devel_linux-64 9.3.0 h7864c58_18
+    - libgcc-ng 9.3.0 h2828fa1_18
+    - libgomp 9.3.0 h2828fa1_18
+    - libstdcxx-ng 9.3.0 h6de172a_18
+    - libtool 2.4.6 h58526e2_1007
+    - make 4.3 hd18ef5c_1
+    - sysroot_linux-64 2.12 h77966d4_13
+  host:
+    - _libgcc_mutex 0.1 conda_forge
+    - _openmp_mutex 4.5 1_gnu
+    - jpeg 9d h36c2ea0_0
+    - libgcc-ng 9.3.0 h2828fa1_18
+    - libgomp 9.3.0 h2828fa1_18
+    - libstdcxx-ng 9.3.0 h6de172a_18
+    - libtiff 4.2.0 hdc55705_0
+    - libwebp-base 1.2.0 h7f98852_0
+    - lz4-c 1.9.3 h9c3ff4c_0
+    - xz 5.2.5 h516909a_1
+    - zlib 1.2.11 h516909a_1010
+    - zstd 1.4.8 ha95c52a_1
+  run:
+    - jpeg >=9d,<10a
+    - libgcc-ng >=9.3.0
+    - libtiff >=4.2.0,<5.0a0
+test:
+  commands:
+    - test -f ${PREFIX}/include/lcms2.h
+    - test -f ${PREFIX}/lib/liblcms2.a
+    - test -f ${PREFIX}/lib/liblcms2${SHLIB_EXT}
+    - jpgicc
+    - tificc
+    - linkicc
+    - transicc
+    - psicc
+about:
+  home: http://www.littlecms.com/
+  license: MIT
+  license_family: MIT
+  license_file: COPYING
+  summary: Open Source Color Management Engine
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - hmaarrfk
+    - isuruf

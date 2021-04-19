@@ -1,0 +1,12 @@
+{
+  "proj": "7.2.0",
+  "numpy": "1.16",
+  "c_compiler_version": "9",
+  "python": "3.8.* *_cpython",
+  "c_compiler": "gcc",
+  "geos": "3.9.1",
+  "cxx_compiler_version": "9",
+  "target_platform": "linux-64",
+  "cxx_compiler": "gxx",
+  "channel_targets": "conda-forge main"
+}

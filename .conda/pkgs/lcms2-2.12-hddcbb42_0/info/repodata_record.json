@@ -1,0 +1,26 @@
+{
+  "arch": "x86_64",
+  "build": "hddcbb42_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "jpeg >=9d,<10a",
+    "libgcc-ng >=9.3.0",
+    "libtiff >=4.2.0,<5.0a0"
+  ],
+  "features": "",
+  "fn": "lcms2-2.12-hddcbb42_0.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "797117394a4aa588de6d741b06fad80f",
+  "name": "lcms2",
+  "platform": "linux",
+  "sha256": "5b3c77a84b1dbfa53932dee830f35a42cfc5541e23ca0626f8058b04dcf518d1",
+  "size": 453156,
+  "subdir": "linux-64",
+  "timestamp": 1612644479622,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/lcms2-2.12-hddcbb42_0.tar.bz2",
+  "version": "2.12"
+}

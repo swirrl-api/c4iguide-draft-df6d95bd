@@ -1,0 +1,1 @@
+["tifffile 2019.*", "pillow", "opencv", "python 3.7.*", "numpy"]

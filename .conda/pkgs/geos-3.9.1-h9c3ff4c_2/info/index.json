@@ -1,0 +1,15 @@
+{
+  "arch": "x86_64",
+  "build": "h9c3ff4c_2",
+  "build_number": 2,
+  "depends": [
+    "libgcc-ng >=9.3.0",
+    "libstdcxx-ng >=9.3.0"
+  ],
+  "license": "LGPL-2.1-only",
+  "name": "geos",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1614634036458,
+  "version": "3.9.1"
+}

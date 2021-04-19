@@ -1,0 +1,33 @@
+{
+  "arch": "x86_64",
+  "build": "py38h7b17777_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "libblas >=3.8.0,<4.0a0",
+    "libcblas >=3.8.0,<4.0a0",
+    "libgcc-ng >=9.3.0",
+    "libgfortran-ng",
+    "libgfortran5 >=9.3.0",
+    "liblapack >=3.8.0,<4.0a0",
+    "libstdcxx-ng >=9.3.0",
+    "numpy >=1.17.5,<2.0a0",
+    "python >=3.8,<3.9.0a0",
+    "python_abi 3.8.* *_cp38"
+  ],
+  "features": "",
+  "fn": "scipy-1.6.2-py38h7b17777_0.tar.bz2",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "e0be90ecf33b94ac3f407f1bf3c76de2",
+  "name": "scipy",
+  "platform": "linux",
+  "sha256": "da5cfd3ac6f2ee4b2f9d21e36f9f7a3b254d1822c45ae7f3a1609337bdfb3e12",
+  "size": 21615340,
+  "subdir": "linux-64",
+  "timestamp": 1616879624450,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/scipy-1.6.2-py38h7b17777_0.tar.bz2",
+  "version": "1.6.2"
+}

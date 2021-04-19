@@ -1,0 +1,75 @@
+# This file created by conda-build 3.21.4
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Mon Mar  1 21:13:11 2021
+# ------------------------------------------------
+
+package:
+  name: geos
+  version: 3.9.1
+source:
+  sha256: 7e630507dcac9dc07565d249a26f06a15c9f5b0c52dd29129a0e3d381d7e382a
+  url: http://download.osgeo.org/geos/geos-3.9.1.tar.bz2
+build:
+  number: '2'
+  run_exports:
+    - geos >=3.9.1,<3.9.2.0a0
+  string: h9c3ff4c_2
+requirements:
+  build:
+    - _libgcc_mutex 0.1 conda_forge
+    - _openmp_mutex 4.5 1_gnu
+    - autoconf 2.69 pl5320h36c2ea0_10
+    - automake 1.16.2 pl5320ha770c72_3
+    - binutils_impl_linux-64 2.35.1 h193b22a_2
+    - binutils_linux-64 2.35 h67ddf6f_30
+    - gcc_impl_linux-64 9.3.0 h70c0ae5_18
+    - gcc_linux-64 9.3.0 hf25ea35_30
+    - gxx_impl_linux-64 9.3.0 hd87eabc_18
+    - gxx_linux-64 9.3.0 h3fbe746_30
+    - kernel-headers_linux-64 2.6.32 h77966d4_13
+    - ld_impl_linux-64 2.35.1 hea4e1c9_2
+    - libgcc-devel_linux-64 9.3.0 h7864c58_18
+    - libgcc-ng 9.3.0 h2828fa1_18
+    - libgomp 9.3.0 h2828fa1_18
+    - libstdcxx-devel_linux-64 9.3.0 hb016644_18
+    - libstdcxx-ng 9.3.0 h6de172a_18
+    - libtool 2.4.6 h58526e2_1007
+    - m4 1.4.18 h516909a_1001
+    - perl 5.32.0 h36c2ea0_0
+    - sysroot_linux-64 2.12 h77966d4_13
+  host:
+    - _libgcc_mutex 0.1 conda_forge
+    - _openmp_mutex 4.5 1_gnu
+    - libgcc-ng 9.3.0 h2828fa1_18
+    - libgomp 9.3.0 h2828fa1_18
+    - libstdcxx-ng 9.3.0 h6de172a_18
+  run:
+    - libgcc-ng >=9.3.0
+    - libstdcxx-ng >=9.3.0
+test:
+  commands:
+    - geos-config --version
+about:
+  description: 'GEOS (Geometry Engine - Open Source) is a C++ port of the Java Topology
+
+    Suite (JTS). As such, it aims to contain the complete functionality of
+
+    JTS in C++.
+
+    '
+  dev_url: https://git.osgeo.org/gitea/geos/geos
+  doc_url: https://trac.osgeo.org/geos/
+  home: https://trac.osgeo.org/geos/
+  license: LGPL-2.1-only
+  license_file: COPYING
+  summary: Geometry Engine - Open Source
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - gillins
+    - msarahan
+    - mwtoews
+    - ocefpaf
+    - pelson
+    - xylar

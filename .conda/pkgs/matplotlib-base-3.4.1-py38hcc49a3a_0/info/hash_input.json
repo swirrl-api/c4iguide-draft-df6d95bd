@@ -1,0 +1,12 @@
+{
+  "numpy": "1.17",
+  "cxx_compiler_version": "9",
+  "c_compiler_version": "9",
+  "freetype": "2",
+  "target_platform": "linux-64",
+  "c_compiler": "gcc",
+  "tk": "8.6",
+  "cxx_compiler": "gxx",
+  "channel_targets": "conda-forge main",
+  "python": "3.8.* *_cpython"
+}
